@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/holo_blue_light"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Movie/Book Tracker"
+        android:layout_gravity="center"
+        android:textSize="30dp"
+   />
+
+    <EditText
+        android:textColorHint="@color/white"
+        android:id="@+id/my_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Wprowadz Tytuł"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+    />
+
+    <EditText
+        android:textColorHint="@color/white"
+        android:id="@+id/my_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Wprowadz Opis"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:textColorHint="@color/white"
+        android:id="@+id/my_review"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Wprowadz Recenzje"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+    />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:id="@+id/radio_ksiazka"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Książka" />
+
+        <RadioButton
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:id="@+id/radio_film"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Film"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/ocena_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ocena: 1"
+        android:textSize="18sp"
+       />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="9"
+        android:progress="0" />
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:backgroundTint="#F4C430"
+    android:text="Dodaj Opinię"
+    android:textColor="#FFFFFF"
+    android:textStyle="bold"
+    android:textSize="18sp"
+    android:padding="12dp"
+    android:layout_marginTop="10dp"
+    android:id="@+id/add_item_button"
+    android:layout_gravity="center"/>
+
+
+    <ListView
+
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
+</LinearLayout>
