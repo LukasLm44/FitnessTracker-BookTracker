@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#90EE90">
+
+    <TextView
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:text="Fitness Tracker"/>
+
+
+
+    <TextView
+        android:id="@+id/poziomTrudnosciLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Poziom trudności: Łatwy"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"/>
+
+    <SeekBar
+        android:id="@+id/seekBarPoziomTrudnosci"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="2"
+        android:progress="0"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Wybierz aktywność"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupAktywnosc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <RadioButton
+            android:id="@+id/radioTreningSilowy"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Siłownia"/>
+
+        <RadioButton
+            android:id="@+id/radioSpace"
+            android:textStyle="bold"
+            android:textSize="24dp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Spacer"/>
+
+        <RadioButton
+            android:id="@+id/radioBieg"
+            android:textStyle="bold"
+            android:textSize="24dp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bieg" />
+
+    </RadioGroup>
+
+
+    <EditText
+        android:id="@+id/editTextDystans"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Dystans"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:background="@android:color/darker_gray"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/editTextCzasTrwania"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Czas Trwania"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:background="@android:color/darker_gray"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/editTextKalorie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Kalorie"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:background="@android:color/darker_gray"
+        android:padding="10dp"/>
+
+
+    <Button
+        android:id="@+id/buttonZapiszDane"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:backgroundTint="#A9A9A9"
+        android:hint="Zapisz Dane"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+      />
+
+
+
+
+</LinearLayout>
