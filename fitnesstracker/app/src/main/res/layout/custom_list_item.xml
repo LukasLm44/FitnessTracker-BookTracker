@@ -5,27 +5,37 @@
 
 
         <ImageView
+            android:layout_marginLeft="10dp"
             android:id="@+id/itemIcon_imageWalk"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginEnd="15dp"
             android:contentDescription="icom item"
-            android:src="@drawable/walk"/>
+            android:src="@drawable/walk"
+            />
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="vertical">
+            <TextView
 
+                android:textStyle="bold"
+                android:id="@+id/poziom"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Poziom:"
+                android:textSize="16sp"/>
             <TextView
                 android:id="@+id/dystans"
                 android:textColor="@color/white"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Dystans:"
-                android:textSize="16sp"
-                android:textStyle="bold" />
+
+                 />
 
             <TextView
                 android:id="@+id/czasT"
@@ -41,12 +51,7 @@
                 android:layout_height="wrap_content"
                 android:text="Kalorie:" />
 
-            <TextView
-                android:id="@+id/poziom"
-                android:textColor="@color/white"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Poziom:" />
+
 
         </LinearLayout>
 
